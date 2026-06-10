@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Beyond Boundaries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Travel Beyond Boundaries home">
+        <img src="assets/icons/logo.svg" alt="" width="64" height="64">
+      </a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#" class="nav__link nav__link--active">Home</a>
+        <a href="#international" class="nav__link">International</a>
+        <a href="#" class="nav__link">About Us</a>
+        <a href="#" class="nav__link">Contacts</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Log In</a>
+        <a href="#" class="btn btn--signup">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="assets/background.jpg" alt="Scenic alpine lake with wooden boats">
+      </div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span class="hero__title-line">Travel Beyond</span>
+            <span class="hero__title-line hero__title-line--accent">Boundaries</span>
+          </h1>
+          <div class="hero__cta">
+            <a href="#international" class="btn btn--primary">Discover More</a>
+            <button type="button" class="hero__video" aria-label="Watch our video">
+              <span class="hero__video-icon" aria-hidden="true"></span>
+              <span>Watch our video</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero__destinations" aria-hidden="true">
+          <img class="hero__destinations-arc" src="assets/icons/arc-dotted.svg" alt="">
+          <img class="hero__destinations-img hero__destinations-img--top" src="assets/destination-tokyo.png" alt="">
+          <img class="hero__destinations-img hero__destinations-img--middle" src="assets/destination-stupa.png" alt="">
+          <img class="hero__destinations-img hero__destinations-img--bottom" src="assets/destination-liberty.png" alt="">
+        </div>
+      </div>
+      <form class="search-bar" aria-label="Trip search">
+        <label class="search-bar__field">
+          <span class="search-bar__label">Choose Destination</span>
+          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
+        </label>
+        <label class="search-bar__field">
+          <span class="search-bar__label">Select Dates</span>
+          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
+        </label>
+        <label class="search-bar__field">
+          <span class="search-bar__label">Add Member</span>
+          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
+        </label>
+        <label class="search-bar__field">
+          <span class="search-bar__label">Pick Up Location</span>
+          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
+        </label>
+        <button type="submit" class="search-bar__submit" aria-label="Search">
+          <img src="assets/icons/arrow-right.svg" alt="" width="20" height="20">
+        </button>
+      </form>
+    </section>
+
+    <section class="international" id="international">
+      <div class="international__inner">
+        <div class="international__carousel">
+          <button type="button" class="carousel-btn carousel-btn--prev" aria-label="Previous destinations">
+            <span class="carousel-btn__icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="destination-cards">
+            <article class="destination-card">
+              <div class="destination-card__image">
+                <img src="assets/turkey.jpg" alt="Blue Mosque at sunset in Istanbul, Turkey">
+              </div>
+              <div class="destination-card__body">
+                <h2 class="destination-card__name">Turkey</h2>
+                <div class="destination-card__stars" aria-label="5 out of 5 stars">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                </div>
+                <hr class="destination-card__divider">
+                <p class="destination-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.
+                </p>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <div class="destination-card__image">
+                <img src="assets/bali.jpg" alt="Pura Ulun Danu Bratan temple in Bali, Indonesia">
+              </div>
+              <div class="destination-card__body">
+                <h2 class="destination-card__name">Bali</h2>
+                <div class="destination-card__stars" aria-label="5 out of 5 stars">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                </div>
+                <hr class="destination-card__divider">
+                <p class="destination-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.
+                </p>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <div class="destination-card__image">
+                <img src="assets/thailand.jpg" alt="Ornate Chinese temple with red lanterns in Thailand">
+              </div>
+              <div class="destination-card__body">
+                <h2 class="destination-card__name">Thailand</h2>
+                <div class="destination-card__stars" aria-label="5 out of 5 stars">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                  <img src="assets/icons/star.svg" alt="">
+                </div>
+                <hr class="destination-card__divider">
+                <p class="destination-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <button type="button" class="carousel-btn carousel-btn--next" aria-label="Next destinations">
+            <span class="carousel-btn__icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <aside class="international__sidebar">
+          <h2 class="international__heading">International</h2>
+          <p class="international__intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.
+          </p>
+          <ul class="international__stats-list">
+            <li>50+ Destination</li>
+            <li>200+ Hotels</li>
+            <li>200k Tourist</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Discover More</a>
+        </aside>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stats-bar__item">
+          <span class="stats-bar__value">4.7</span>
+          <span class="stats-bar__label">Google Rate</span>
+        </div>
+        <div class="stats-bar__item">
+          <span class="stats-bar__value">200,000+</span>
+          <span class="stats-bar__label">Satisfied Travels</span>
+        </div>
+        <div class="stats-bar__item">
+          <span class="stats-bar__value">180+</span>
+          <span class="stats-bar__label">Tour Captain</span>
+        </div>
+        <div class="stats-bar__item">
+          <span class="stats-bar__value">50+</span>
+          <span class="stats-bar__label">Destination</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
