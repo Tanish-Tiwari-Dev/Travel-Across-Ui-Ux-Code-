@@ -18,12 +18,17 @@
       <nav class="nav__links" aria-label="Main navigation">
         <a href="#" class="nav__link nav__link--active">Home</a>
         <a href="#international" class="nav__link">International</a>
-        <a href="#" class="nav__link">About Us</a>
-        <a href="#" class="nav__link">Contacts</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#contacts" class="nav__link">Contacts</a>
       </nav>
       <div class="nav__actions">
-        <a href="#" class="nav__login">Log In</a>
-        <a href="#" class="btn btn--signup">Sign Up</a>
+        <a href="login.html" class="nav__login">Log In</a>
+        <a href="signup.html" class="btn btn--signup">Sign Up</a>
+        <button type="button" class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -54,23 +59,37 @@
           <img class="hero__destinations-img hero__destinations-img--bottom" src="assets/destination-liberty.png" alt="">
         </div>
       </div>
-      <form class="search-bar" aria-label="Trip search">
-        <label class="search-bar__field">
-          <span class="search-bar__label">Choose Destination</span>
-          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
-        </label>
-        <label class="search-bar__field">
-          <span class="search-bar__label">Select Dates</span>
-          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
-        </label>
-        <label class="search-bar__field">
-          <span class="search-bar__label">Add Member</span>
-          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
-        </label>
-        <label class="search-bar__field">
-          <span class="search-bar__label">Pick Up Location</span>
-          <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
-        </label>
+      <form class="search-bar search-bar--glass" aria-label="Trip search">
+        <div class="search-bar__field">
+          <label class="search-bar__label" for="destination">Destination</label>
+          <div class="search-bar__input-wrapper">
+            <select id="destination" class="search-bar__input">
+              <option value="" disabled selected>Choose Destination</option>
+              <option value="turkey">Turkey</option>
+              <option value="bali">Bali</option>
+              <option value="thailand">Thailand</option>
+            </select>
+            <img class="search-bar__chevron" src="assets/icons/chevron-down.svg" alt="">
+          </div>
+        </div>
+        <div class="search-bar__field">
+          <label class="search-bar__label" for="dates">Dates</label>
+          <div class="search-bar__input-wrapper">
+            <input type="date" id="dates" class="search-bar__input" placeholder="Select Dates">
+          </div>
+        </div>
+        <div class="search-bar__field">
+          <label class="search-bar__label" for="members">Members</label>
+          <div class="search-bar__input-wrapper">
+            <input type="number" id="members" class="search-bar__input" placeholder="Add Member" min="1">
+          </div>
+        </div>
+        <div class="search-bar__field">
+          <label class="search-bar__label" for="pickup">Pick Up</label>
+          <div class="search-bar__input-wrapper">
+            <input type="text" id="pickup" class="search-bar__input" placeholder="Pick Up Location">
+          </div>
+        </div>
         <button type="submit" class="search-bar__submit" aria-label="Search">
           <img src="assets/icons/arrow-right.svg" alt="" width="20" height="20">
         </button>
@@ -182,6 +201,44 @@
           <span class="stats-bar__value">50+</span>
           <span class="stats-bar__label">Destination</span>
         </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__image">
+          <img src="assets/bali.jpg" alt="About Travel Beyond Boundaries">
+        </div>
+        <div class="about__content">
+          <h2 class="about__heading">About Us</h2>
+          <p class="about__text">
+            We are dedicated to providing the best travel experiences across the globe. Our mission is to take you beyond boundaries, ensuring every journey is memorable, safe, and tailored to your desires. With years of expertise in the travel industry, our passionate team is here to craft your perfect getaway.
+          </p>
+          <p class="about__text">
+            Discover breathtaking landscapes, vibrant cultures, and hidden gems with our carefully curated tours. Join thousands of satisfied travelers who have explored the world with us.
+          </p>
+          <a href="#contacts" class="btn btn--primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <h2 class="contacts__heading">Contact Us</h2>
+          <p class="contacts__text">Ready to start your next adventure? Reach out to us and let's plan your dream trip together.</p>
+          <div class="contacts__details">
+            <p><strong>Address:</strong> 123 Adventure Lane, Wanderlust City, WL 45678</p>
+            <p><strong>Email:</strong> info@travelbeyond.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <form class="contacts__form auth-card" aria-label="Contact form">
+          <input type="text" class="auth-card__input" placeholder="Your Name" required>
+          <input type="email" class="auth-card__input" placeholder="Your Email" required>
+          <textarea class="auth-card__input contacts__textarea" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="btn btn--primary auth-card__submit">Send Message</button>
+        </form>
       </div>
     </section>
   </main>

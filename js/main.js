@@ -17,3 +17,15 @@ if (cardsContainer && prevBtn && nextBtn) {
 document.querySelector('.search-bar')?.addEventListener('submit', (event) => {
   event.preventDefault();
 });
+
+// Mobile Navigation Toggle
+const navToggle = document.querySelector('.nav__toggle');
+const nav = document.querySelector('.nav');
+
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav--open');
+    const isExpanded = nav.classList.contains('nav--open');
+    navToggle.setAttribute('aria-expanded', isExpanded);
+  });
+}
